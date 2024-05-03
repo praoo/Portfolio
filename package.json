@@ -1,7 +1,7 @@
 {
   "name": "prabhat-portfolio",
   "version": "0.1.0",
-  "homepage": "https://praoo.github.io/My_portfolio",
+  
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
