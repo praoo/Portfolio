@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Bio } from '../../data/constants';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+
+// import { Bio } from '../../data/constants';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -32,7 +34,7 @@ const Logo = styled.h1`
 `;
 
 const Nav = styled.nav`
-  width: 100%;
+  width: 200%;
   max-width: 800px;
   margin-top: 0.5rem;
   display: flex;
@@ -89,22 +91,28 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Kappeta Jaya Chandra Reddy</Logo>
+        <Logo>PRABHAT KUMAR SINGH</Logo>
+          
+        
         <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
-          {/* <NavLink href="#experience">Experience</NavLink> */}
+          <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
+        
+
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+    
+          <SocialMediaIcon href="mailto:prabhatsingh42004@gmail.com" target="display"><EmailIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="tel:8303402010" target="display"><PhoneIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="https://www.linkedin.com/in/prabhat-kumar-singh-0bb7a8252/" target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="https://www.instagram.com/prabhatsingh23670/" target="display"><InstagramIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="https://www.facebook.com/prabhatkumarsingh.prabhat.56/" target="display"><FacebookIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; {new Date().getFullYear()} Kappeta Jaya Chandra Reddy. All rights reserved.
+          &copy; {new Date().getFullYear()} Prabhat Kumar Singh. All rights reserved.
         </Copyright>
 
       </FooterWrapper>

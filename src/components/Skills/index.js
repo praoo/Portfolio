@@ -124,7 +124,7 @@ const Skills = () => (
             </Title>
 
             <Description>
-                Here are some of my skills on which I have been working on for the past {new Date().getFullYear()-2021} years.
+                Here are some of my skills on which I have been working on for the past {new Date().getFullYear()-2022} years.
             </Description>
 
             <SkillsContainer>

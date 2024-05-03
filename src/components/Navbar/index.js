@@ -3,6 +3,16 @@ import React from "react"
 import styled from "styled-components";
 import {Link as LinkR} from "react-router-dom";
 import {FaBars} from "react-icons/fa";
+import SvgIcon from '@mui/material/SvgIcon';
+
+function HelloIcon(props) {
+    return (
+      <SvgIcon {...props}>
+        {/* Path for the word "HELLO" */}
+        <path fill="#FFD700" d="M2.5,20.2c-1.1,0-2-0.9-2-2v-16c0-1.1,0.9-2,2-2h6c0.6,0,1,0.4,1,1s-0.4,1-1,1h-5v16h16v-6c0-0.6,0.4-1,1-1s1,0.4,1,1 v6c0,1.1-0.9,2-2,2H2.5z M9.5,9.5c0.3,0,0.5,0.1,0.7,0.3l3.1,3.1l0.7-0.7c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4l-1.7,1.7 c-0.4,0.4-1,0.4-1.4,0c-0.2-0.2-0.3-0.4-0.3-0.7l-0.7,0.7c-0.2,0.2-0.5,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3l-1.7-1.7 c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l0.7,0.7c0.4,0.4,0.4,1,0,1.4c-0.4,0.4-1,0.4-1.4,0l-1.7-1.7c-0.4-0.4-1-0.4-1.4,0 c-0.4,0.4-0.4,1,0,1.4l1.7,1.7c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l0.7-0.7c0.2-0.2,0.5-0.3,0.7-0.3 c0.6,0,1,0.4,1,1s-0.4,1-1,1H9.5z"/>
+      </SvgIcon>
+    );
+  }
 
 const Nav = styled.div`
     background-color : ${({theme})=> theme.card_light};
@@ -210,7 +220,7 @@ const Navbar = () => {
         <Nav>
             <NavContainer className={isScroll ? "scrolled" : ""}>
                 <NavLogo>
-                    Jay
+                 <HelloIcon/>   Hello..
                 </NavLogo>
 
                 <MobileIcon>
@@ -221,12 +231,15 @@ const Navbar = () => {
                     <NavLink href="#about">About</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
                     <NavLink href="#projects">Projects</NavLink>
+                    <NavLink href="#experience">Experience</NavLink>
                     <NavLink href="#education">Education</NavLink>
+                 
                 </NavItems>
 
                 <ButtonContainer>
-                    <Button href="https://github.com/kjcreddy666" target="blank">Github</Button>
-                    <Button href="https://linkedin.com/in/kjcreddy666" target="blank">LinkedIn</Button>
+                    <Button href="https://drive.google.com/file/d/1w56jx-Cm0TVz4KOKFShQoKyrR_K4hT-L/view" target="blank">RESUME</Button>
+                    <Button href="https://github.com/praoo" target="blank">Github</Button>
+                    <Button href="https://www.linkedin.com/in/prabhat-kumar-singh-0bb7a8252/" target="blank">LinkedIn</Button>
                 </ButtonContainer>
 
                 {
@@ -235,10 +248,13 @@ const Navbar = () => {
                                 <MobileLink href="#about" onClick={()=>setIsOpen(!isOpen)}>About</MobileLink>
                                 <MobileLink href="#skills" onClick={()=>setIsOpen(!isOpen)}>Skills</MobileLink>
                                 <MobileLink href="#projects" onClick={()=>setIsOpen(!isOpen)}>Projects</MobileLink>
+                                <MobileLink href="#experience" onClick={()=>setIsOpen(!isOpen)}>Experience</MobileLink>
                                 <MobileLink href="#education" onClick={()=>setIsOpen(!isOpen)}>Education</MobileLink>
+                              
                                 <MobileButtonContainer isOpen={isOpen}>
-                                    <MobileButton href="https://github.com/kjcreddy666" target="blank">Github</MobileButton>
-                                    <MobileButton href="https://linkedin.com/in/kjcreddy666" target="blank">LinkedIn</MobileButton>
+                                    <MobileButton href="https://drive.google.com/file/d/1w56jx-Cm0TVz4KOKFShQoKyrR_K4hT-L/view" target="blank">RESUME</MobileButton>
+                                    <MobileButton href="https://github.com/praoo" target="blank">Github</MobileButton>
+                                    <MobileButton href="https://www.linkedin.com/in/prabhat-kumar-singh-0bb7a8252/" target="blank">LinkedIn</MobileButton>
                                 </MobileButtonContainer>
                             </MobileMenu>
                         
