@@ -252,7 +252,7 @@ const Navbar = () => {
                                 <MobileLink href="#education" onClick={()=>setIsOpen(!isOpen)}>Education</MobileLink>
                               
                                 <MobileButtonContainer isOpen={isOpen}>
-                                    <MobileButton href="https://drive.google.com/file/d/1w56jx-Cm0TVz4KOKFShQoKyrR_K4hT-L/view" target="blank">RESUME</MobileButton>
+                                    <MobileButton href="https://drive.google.com/file/d/1Yv3LOUUjVbDixdXNRKDPSVzEnVo8z3WT/view" target="blank">RESUME</MobileButton>
                                     <MobileButton href="https://github.com/praoo" target="blank">Github</MobileButton>
                                     <MobileButton href="https://www.linkedin.com/in/prabhat-kumar-singh-0bb7a8252/" target="blank">LinkedIn</MobileButton>
                                 </MobileButtonContainer>
