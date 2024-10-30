@@ -184,7 +184,7 @@ const Hero = () => {
                 <HeroInnerContainer>
                     <HeroLeftContainer>
                         <Title>
-                            Hi, I am <br/>{Bio.name}
+                            Hi, I am your <br/>{Bio.name}
                         </Title>
 
                         <TextLoop>
