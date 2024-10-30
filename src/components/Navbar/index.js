@@ -237,7 +237,7 @@ const Navbar = () => {
                 </NavItems>
 
                 <ButtonContainer>
-                    <Button href="https://drive.google.com/file/d/1w56jx-Cm0TVz4KOKFShQoKyrR_K4hT-L/view" target="blank">RESUME</Button>
+                    <Button href="https://drive.google.com/file/d/16H2slLCPkFbKppkT7PRNdcnm0d8NkgIB/view?usp=drive_link" target="blank">RESUME</Button>
                     <Button href="https://github.com/praoo" target="blank">Github</Button>
                     <Button href="https://www.linkedin.com/in/prabhat-kumar-singh-0bb7a8252/" target="blank">LinkedIn</Button>
                 </ButtonContainer>
